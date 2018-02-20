@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5 {
 
 header, nav, footer, section, article, div {
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 ul {
@@ -47,7 +48,7 @@ ul {
  */
 
 .header {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); 
   min-height: 56px;
   transition: min-height 0.3s;
 }
@@ -87,7 +88,7 @@ ul {
 }
 
 .nav__list {
-  width: 100%;
+  max-width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -120,6 +121,7 @@ ul {
  */
 
 main {
+  max-width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   width: 800px;
   margin-left: auto;
@@ -155,7 +157,6 @@ main {
   position: absolute;
   bottom: 0;
   height: 40%;
-  width: 100%;
   color: #fff;
   padding: 1em;
 }
@@ -167,7 +168,8 @@ main {
  *
  */
 
-.top-news {
+ .top-news {
+  /*max-width: 100%;*/
   float: right;
   width: 320px;
   height: 300px;
@@ -220,7 +222,6 @@ main {
 }
 
 .scores__table {
-  width: 100%;
   border-collapse: collapse;
 }
 
@@ -263,7 +264,7 @@ main {
  */
 
 .weather {
-  float: right;
+  /*float: right;*/
   width: 320px;
   padding: 1em;
 }
@@ -308,7 +309,7 @@ main {
 }
 
 .weather__next__image {
-  width: 100%;
+  max-width: 100%;
 }
 
 
@@ -319,6 +320,7 @@ main {
  */
 
 .recent-news {
+  /*max-width: 100%;*/
   clear: both;
   padding: 1em;
 }
@@ -358,7 +360,7 @@ main {
 footer {
   border-top: 1px solid #E0E0E0;
   padding: 1em;
-  width: 100%;
+  max-width: 100%;
 }
 
 footer li {
