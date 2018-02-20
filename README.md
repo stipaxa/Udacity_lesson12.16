@@ -1,4 +1,4 @@
-# Udacity_lesson12.16
+# Udacity_lesson12.16 - Building the Home TownApp part 1 of 3
 Google Developer Front-End Web Developer Nanodegree Scholarship
 
 ## ToDo List:
