@@ -17,7 +17,6 @@ h1, h2, h3, h4, h5 {
 
 header, nav, footer, section, article, div {
   box-sizing: border-box;
-  /*width: 100%;*/
 }
 
 ul {
@@ -48,7 +47,7 @@ ul {
  */
 
 .header {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   min-height: 56px;
   transition: min-height 0.3s;
 }
@@ -104,9 +103,9 @@ ul {
 }
 
 .nav a {
-  /*padding: 1.5em;*/
   text-decoration: none;
   color: #616161;
+  padding: 1.5em;
 }
 
 .nav a:hover {
@@ -122,9 +121,8 @@ ul {
  */
 
 main {
-  width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  /*width: 800px;*/
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -143,7 +141,7 @@ main {
  */
 
 .hero {
-  /*float: left;*/
+  float: left;
   width: 100%;
   position: relative;
   background-image: url("./images/dog.jpg");
@@ -152,13 +150,13 @@ main {
 }
 
 .hero article {
-  width: 100%;
   box-sizing: border-box;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 0;
   height: 40%;
+  width: 100%;
   color: #fff;
   padding: 1em;
 }
@@ -170,10 +168,14 @@ main {
  *
  */
 
- .top-news {
-  height: 300px;
+.top-news {
+  /*float: right;*/
+  width: 100%;
+  margin: 0 auto;
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
+  margin: 0;
+  margin-bottom: 1em;
 }
 
 .news__title {
@@ -185,7 +187,7 @@ main {
 
 .top-news__item {
   border-bottom: 1px solid #E0E0E0;
-  padding: 1em 0;
+  padding: 1.5em 0;
   line-height: 19.2px;
 }
 
@@ -200,6 +202,7 @@ main {
 .top-news__item a {
   text-decoration: none;
   color: #666;
+  padding: 1.5em;
 }
 
 .top-news__item a:hover,
@@ -215,16 +218,18 @@ main {
  */
 
 .scores {
-  padding-top: 1em;
+  /*margin: 0 auto;*/
+  width: 100%;
+  float: left;
 }
 
 .scores__table {
+  width: 100%;
   border-collapse: collapse;
 }
 
 .scores__table th,
 .scores__table td {
-  width: 100%;
   padding: 1em; 
 }
 
@@ -262,6 +267,9 @@ main {
  */
 
 .weather {
+  float: right;
+  width: 100%;
+  /*margin: 0 auto;*/
   padding: 1em;
 }
 
@@ -316,7 +324,6 @@ main {
  */
 
 .recent-news {
-  /*max-width: 100%;*/
   clear: both;
   padding: 1em;
 }
@@ -327,7 +334,7 @@ main {
 }
 
 .snippet__thumbnail {
-  width: 100%;
+  width: 100px;
   float: left;
   margin-right: 1em;
 }
@@ -361,10 +368,13 @@ footer {
 
 footer li {
   display: inline-block;
-  margin: 0 1em;
+  margin: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 footer a {
   text-decoration: none;
   color: #333;
+  padding: 1.5em;
 }
