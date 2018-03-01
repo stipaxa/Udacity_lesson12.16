@@ -11,3 +11,7 @@ Google Developer Front-End Web Developer Nanodegree Scholarship
 
 ## Part2 - lesson 1.14.11 
 ### ToDo List:
+* Pick a set of breakpoints and use one of the patterns that you learned to style 
+the page so that it works across different devices.
+* Test on multiple phones, tables and browser window sizes and adjust your breakpoints
+until you're happy.
