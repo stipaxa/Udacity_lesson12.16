@@ -1,0 +1,46 @@
+/*
+ *
+ * Top News
+ *
+ */
+
+ .top-news {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  
+  .news__title {
+    font-weight: 300;
+    border-bottom: 1px solid #E0E0E0;
+    line-height: 24px;
+    font-size: 16px;
+  }
+  
+  .top-news__item {
+    border-bottom: 1px solid #E0E0E0;
+    padding: 0.5em 0;
+    line-height: 19.2px;
+  }
+  
+  .top-news__item:before {
+    content: "» ";
+  }
+  
+  .top-news__item:last-child {
+    border-bottom: none;
+  }
+  
+  .top-news__item a {
+    text-decoration: none;
+    color: #666;
+    padding: 1.5em;
+  }
+  
+  .top-news__item a:hover,
+  .top-news__item a:active {
+    text-decoration: underline;
+  }
+  

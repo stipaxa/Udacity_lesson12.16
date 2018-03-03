@@ -1,0 +1,43 @@
+.news__more {
+    float: right;
+    font-size: .8em;
+    color: #333;
+    text-decoration: none;
+  }
+  
+
+/*
+ *
+ * Recent News
+ *
+ */
+
+.recent-news {
+  clear: both;
+  padding: 1em;
+}
+
+.snippet {
+  clear: both;
+  margin: 24px 0;
+}
+
+.snippet__thumbnail {
+  width: 100px;
+  float: left;
+  margin-right: 1em;
+}
+
+.snippet__title {
+  font-weight: 500;
+}
+
+.snippet__title a {
+  text-decoration: none;
+  color: #666;
+}
+
+.snippet__title a:hover,
+.snippet__title a:active {
+  text-decoration: underline;
+}

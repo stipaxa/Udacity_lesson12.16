@@ -1,0 +1,31 @@
+/*
+ *
+ * Footer
+ *
+ */
+
+footer {
+  border-top: 1px solid #E0E0E0;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+footer ul{
+  max-width: 850px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  padding: 1.5em;
+}
