@@ -1,4 +1,4 @@
-body, html {
+body, html, main {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -25,20 +25,29 @@ ul {
   margin: 0;
 }
 
-
-/*
- *
- * Common
- * 
- */
-
-.news__more {
-  float: right;
-  font-size: .8em;
-  color: #333;
-  text-decoration: none;
+.container{
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.box {
+  width: 100%;
+}
+
+main {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  margin: auto;
+  flex-direction: row;
+}
 
 /*
  *
@@ -46,33 +55,41 @@ ul {
  *
  */
 
+ .header__logo, .header__title, .header__menu{
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 12px;
+}
+
 .header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   min-height: 56px;
   transition: min-height 0.3s;
+  width: 100%;    
 }
 
 .header__inner {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px; 
 }
 
 .header__logo {
-  height: 72px;
-  margin-right: 1em;
-  vertical-align: top;
-  margin-top: 12px;
+  margin-left: 5px;
 }
 
 .header__title {
   font-weight: 300;
-  font-size: 4em;
-  margin: 0.5em 0.25em;
-  display: inline-block;
+  font-size: 7vw; 
   color: #212121;
 }
 
+#menu{
+  float: right;
+  margin: auto;
+  margin-right: 5px;
+  margin-top: 1.5em;
+}
 
 /*
  *
@@ -80,7 +97,7 @@ ul {
  *
  */
 
-.nav {
+ .nav {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -113,40 +130,19 @@ ul {
   color: #212121;
 }
 
-
-/*
- *
- * Main
- *
- */
-
-main {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*
- *
- * Content
- *
- */
-
-
-/*
+ /*
  *
  * Hero
  *
  */
 
-.hero {
-  float: left;
+ .hero {
   width: 100%;
   position: relative;
   background-image: url("./images/dog.jpg");
   background-size: cover;
   height: 300px;
+  margin-bottom: 1em;
 }
 
 .hero article {
@@ -155,12 +151,11 @@ main {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 0;
-  height: 40%;
+  /*height: 40%;*/
   width: 100%;
   color: #fff;
-  padding: 1em;
+  padding: 0.5em;
 }
-
 
 /*
  *
@@ -168,13 +163,11 @@ main {
  *
  */
 
-.top-news {
-  /*float: right;*/
+ .top-news {
   width: 100%;
   margin: 0 auto;
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
-  margin: 0;
   margin-bottom: 1em;
 }
 
@@ -187,7 +180,7 @@ main {
 
 .top-news__item {
   border-bottom: 1px solid #E0E0E0;
-  padding: 1.5em 0;
+  padding: 0.5em 0;
   line-height: 19.2px;
 }
 
@@ -217,9 +210,9 @@ main {
  *
  */
 
-.scores {
-  /*margin: 0 auto;*/
-  width: 100%;
+ .scores {
+  /*margin: 0 auto;
+  width: 100%;*/
   float: left;
 }
 
@@ -266,7 +259,7 @@ main {
  *
  */
 
-.weather {
+ .weather {
   float: right;
   width: 100%;
   /*margin: 0 auto;*/
@@ -316,43 +309,49 @@ main {
   width: 100%;
 }
 
+.news__more {
+  float: right;
+  font-size: .8em;
+  color: #333;
+  text-decoration: none;
+}
+
 
 /*
- *
- * Weather
- *
- */
+*
+* Recent News
+*
+*/
 
 .recent-news {
-  clear: both;
-  padding: 1em;
+clear: both;
+padding: 1em;
 }
 
 .snippet {
-  clear: both;
-  margin: 24px 0;
+clear: both;
+margin: 24px 0;
 }
 
 .snippet__thumbnail {
-  width: 100px;
-  float: left;
-  margin-right: 1em;
+width: 100px;
+float: left;
+margin-right: 1em;
 }
 
 .snippet__title {
-  font-weight: 500;
+font-weight: 500;
 }
 
 .snippet__title a {
-  text-decoration: none;
-  color: #666;
+text-decoration: none;
+color: #666;
 }
 
 .snippet__title a:hover,
 .snippet__title a:active {
-  text-decoration: underline;
+text-decoration: underline;
 }
-
 
 /*
  *
@@ -360,10 +359,17 @@ main {
  *
  */
 
-footer {
+ footer {
   border-top: 1px solid #E0E0E0;
   padding: 1em;
   width: 100%;
+  text-align: center;
+}
+
+footer ul{
+  max-width: 850px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 footer li {
@@ -378,3 +384,4 @@ footer a {
   color: #333;
   padding: 1.5em;
 }
+
